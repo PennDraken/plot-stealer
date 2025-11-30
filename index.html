@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot Stealer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Plot Stealer</h1><br>
+    A semi-fast way to get data from diagrams and plots.<br><br>
+    1. Paste image<br>
+    2. Set xaxis and yaxis<br>
+    3. Press graph to set data points<br>
+    4. Copy points from text area<br>
+    <img id="img-example" src="example-diagram.png" width="0xp"></img> <br>
+
+    <input id="xmin" type="number" value="0"></input>xmin
+    <input id="xmax" type="number" value="1.5"></input>xmax<br>
+    <input id="ymin" type="number" value="0"></input>ymin
+    <input id="ymax" type="number" value="0.20"></input>ymax<br>
+    <textarea id="output-textarea" rows="4" cols="200"></textarea><br>
+
+    <select id="state-selector">
+        <option value="xmin">xmin</option>
+        <option value="xmax">xmax</option>
+        <option value="ymin">ymin</option>
+        <option value="ymax">ymax</option>
+        <option value="Add points">Add points</option>
+        <option value="Delete points">Delete points</option>
+    </select><br><br>
+
+    <canvas id="image-canvas" width="2000px" height="2000px"></canvas><br>
+    <script src="script.js"></script>
+</body>
+</html>
