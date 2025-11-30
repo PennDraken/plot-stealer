@@ -192,7 +192,7 @@ function canvasClick(canvas, event) {
         const ymax = ymaxInput.value;
         console.log(xmax)
         const real_x = ((x - xaxis.x1) / pixel_dx) * (xmax - xmin) + xmin;
-        const real_y = ((yaxis.y2 - y) / pixel_dy) * (ymax - ymin) + ymin;
+        const real_y = ((y - yaxis.y1) / pixel_dy) * (ymax - ymin) + ymin;
         console.log(real_x);
         real_xs = real_xs + real_x;
         real_ys = real_ys + real_y;
