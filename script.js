@@ -138,8 +138,8 @@ function delPoint(xs, ys, x, y, r) {
     for (let i = 0; i < xs.length; i++) {
         const x1 = xs[i];
         const y1 = ys[i];
-        const distance = Math.sqrt((x - x1)^2 + (y - y1)^2);
-        if (distance < r) {
+        const distance = Math.pow(x - x1,2) + Math.pow(y - y1,2);
+        if (distance <= Math.pow(r, 2)) {
             xs.splice(i, 1);
             ys.splice(i, 1);
             return;
@@ -201,7 +201,7 @@ function canvasClick(canvas, event) {
             real_ys = real_ys + ", ";
         }
     }
-    outputTextArea.value = real_xs + "\n" + real_ys;
+    outputTextArea.value = real_xs + ")\n" + real_ys + ")";
 }
 
 canvas.addEventListener("mousedown", function (e) {
