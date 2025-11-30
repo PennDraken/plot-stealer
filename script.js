@@ -33,7 +33,7 @@ const States = Object.freeze({
 var state = States.SETMINX;
 
 var xaxis = {x1: 120, x2: 950, y: 200};
-var yaxis = {y1: 36, y2: 189, x: 110};
+var yaxis = {y1: 189, y2: 36, x: 110};
 
 // Stores points
 // var xs = [ 10,100,200,300];
