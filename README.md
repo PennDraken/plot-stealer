@@ -31,6 +31,9 @@ If you have a diagram containing data, in an image format where the original dat
 
 <img width="1998" height="129" alt="image" src="https://github.com/user-attachments/assets/53f75920-a662-4232-88f5-d3deaf642912" />
 
+# Live demo
+![plot-stealer](https://github.com/user-attachments/assets/a784a683-24be-45a2-b1e2-c71b1fc39ed4)
+
 
 # Limitations
 Currently there is only support for plots with linear steps in the x- and y-axis.
